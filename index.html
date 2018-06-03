@@ -69,7 +69,7 @@
 				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Experience</span></a></li>
 				<li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span></a></li>
 				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Skills</span></a></li>
-				<li><a href="http://blog.faris.id" target="_blank"><span class="menu-text">Blog</span></a></li>
+				<li id="blog-link"><a class="blog" href="#"><span class="icon icon-rss"></span><span class="menu-text">Blog</span></a></li>
 			</ul>
 			<div class="fh5co-tab-content active" data-content="1">
 				<div class="fh5co-content-inner text-center">
@@ -143,8 +143,8 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>2008 - Present</h2>
-									<h3>XYZ Inc.</h3>
+									<h2>Sep 2017 - Present</h2>
+									<h3>PT Xtremax Teknologi Indonesia</h3>
 									<p>Far far away, behind the word mountains, far from the countries.</p>
 								</div>
 							</div>
@@ -154,23 +154,11 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>2004-2008</h2>
-									<h3>Previous Ltd Co.</h3>
+									<h2>Aug 2016 - Dec 2016</h2>
+									<h3>PT Ursabyte</h3>
 									<p>Far far away, behind the word mountains, far from the countries.</p>
 								</div>
 							</div>
-
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>1999-2004</h2>
-									<h3>Previous Ltd Co.</h3>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
-								</div>
-							</div>
-
 						</div>
 						
 					</div>
@@ -211,7 +199,7 @@
 				<div class="col-md-6 col-md-offset-3 text-center">
 					<small>
 						&copy; 2018 Faris Arifiansyah. All Rights Reserved. 
-						<!--<span class="fh5co-author">Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> </span>-->
+						<div style="display:none;"><br /><br /><span class="fh5co-author">Background Image : <a href="http://www.mediamutation.com/space-background/space-background-hd/space-background-hd/" target="_blank">Source</a> </span></div>
 					</small>
 				</div>
 			</div>
@@ -230,6 +218,15 @@
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("li#blog-link").click(function(e){
+				var win = window.open("https://blog.faris.id", "_blank");
+				win.focus();
+			});
+		});
+	</script>
 
 	</body>
 </html>
