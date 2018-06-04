@@ -14,7 +14,7 @@
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   color: #7f7f7f;
   color: rgba(255, 255, 255, 0.7);
@@ -447,4 +447,7 @@ figure {
   }
 }
 
+div#profile-content {
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */
