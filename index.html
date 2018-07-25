@@ -1,109 +1,191 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Faris Arifiansyah - Personal Website</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Faris Arifiansyah - Personal Website" />
-	<meta name="keywords" content="faris arifiansyah" />
-	<meta name="author" content="Faris Arifiansyah" />
+<html lang="en">
 
-  <!-- 
-	//////////////////////////////////////////////////////
+  <head>
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal website of Faris Arifiansyah">
+    <meta name="author" content="Faris Arifiansyah">
+    <meta name="keywords" content="faris arifiansyah" />
 
-	//////////////////////////////////////////////////////
-	 -->
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="Faris Arifiansyah's Personal Website"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://www.faris.id/img/profile.jpg"/>
+    <meta property="og:url" content="https://www.faris.id"/>
+    <meta property="og:site_name" content="Faris Arifiansyah's Personal Website"/>
+    <meta property="og:description" content="Hello, my name is Faris. I am an ESFJ Person. I'm a software engineer and currently working for Xtremax Indonesia. I'm passionately in love with software engineering because there are so many challenges in building a software with the best quality. I have a dream to contribute more to my nation, Indonesia, through technology. I want to use my skills and knowledge to increase the Indonesian people's welfare."/>
+    <meta name="twitter:title" content="Faris Arifiansyah's Personal Website" />
+    <meta name="twitter:image" content="https://www.faris.id/img/profile.jpg" />
+    <meta name="twitter:url" content="https://www.faris.id" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@Faris17" />
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="Faris Arifiansyah's Personal Website"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:image" content="https://www.faris.id/images/profile_img.png"/>
-	<meta property="og:url" content="https://www.faris.id"/>
-	<meta property="og:site_name" content="Faris Arifiansyah's Personal Website"/>
-	<meta property="og:description" content="Hello, my name is Faris. I am an ESFJ Person. I'm a software engineer and currently working for Xtremax Indonesia. I'm passionately in love with software engineering because there are so many challenges in building a software with the best quality. I have a dream to contribute more to my nation, Indonesia, through technology. I want to use my skills and knowledge to increase the Indonesian people's welfare."/>
-	<meta name="twitter:title" content="Faris Arifiansyah's Personal Website" />
-	<meta name="twitter:image" content="https://www.faris.id/images/profile_img.png" />
-	<meta name="twitter:url" content="https://www.faris.id" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:creator" content="@Faris17" />
+    <title>Faris Arifiansyah</title>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
 
-	</head>
-	<body style="background-image: url(images/bg_img.jpg);">
-	
-	<div id="fh5co-main">
-		<div class="fh5co-tab-wrap">
-			<ul class="fh5co-tab-menu">
-				<li class="active"><a href="#" data-tab="1"><span class="icon icon-glass"></span><span class="menu-text">Profile</span></a></li>
-				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Experience</span></a></li>
-				<li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span></a></li>
-				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Skills</span></a></li>
-				<li id="blog-link"><a class="blog" href="#"><span class="icon icon-rss"></span><span class="menu-text">Blog</span></a></li>
-			</ul>
-			<div class="fh5co-tab-content active" data-content="1">
-				<div class="fh5co-content-inner text-center">
-					<div class="row row-bottom-padded-sm">
-						<div class="col-md-12">
-							<figure>
-								<img src="images/profile_img.png" alt="Faris Arifiansyah's Photo" style="border-radius: 15px;">
-							</figure>
-							<h1>Faris Arifiansyah</h1>
-							<div id="profile-content">
-							<p>Hello, my name is Faris. I was born in Bandung on 9th December 1993. I'm a software engineer and currently working for Xtremax Indonesia. 
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon" type="image/png">
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Menu</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://blog.faris.id" target="_blank">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Faris
+            <span class="text-primary">Arifiansyah</span>
+          </h1>
+          <div class="subheading mb-5">Bandung, West Java, Indonesia ·
+            <a href="mailto:faris.arifiansyah@gmail.com">faris.arifiansyah@gmail.com</a>
+          </div>
+          <p class="mb-5">I am a software engineer and currently working for <a href="https://www.xtremax.com" target="_blank">Xtremax Indonesia</a>. 
+            I'm passionately in love with technology, especially IT. I'm a self-motivated and adaptable person. I'm always eager to learn something new, whatever it is. 
+            Apart from the IT world, I love sports, especially football, and playing music.
+          </p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/farisarifiansyah/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/faris-arifiansyah/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/faris_arifiansyah/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/Faris17" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/faris19" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com/channel/UCo8pcpPchtjtprX0vmB_7EQ" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://blog.faris.id" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>              
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="profile">
+        <div class="my-auto">
+          <h2 class="mb-5">Profile</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <p>Hello, my name is Faris. I was born in Bandung on 9th December 1993. I'm a software engineer and currently working for Xtremax Indonesia. 
 								I'm passionately in love with software engineering because there are so many challenges in building a software with the best quality. I have
 								a dream to contribute to my nation, Indonesia, through technology. I want to use my skills and knowledge to increase the
 								Indonesian people's welfare. As a software engineer, I'm very happy when people use a software that I built and they feel helped by it. I also
-								love to share my knowledge and I usually wrote them on my <a href="https://blog.faris.id" target="_blank">blog</a>. I'm open if you want me to
-								share my knowledge to you privately or if you want me to be a speaker at your event. Just contact me via the email below. I will gladly 
-								accept it if I think I have enough knowledge about the topic :)
+                love to share my knowledge and I usually wrote them on my <a href="https://blog.faris.id" target="_blank">blog</a>. I'm open if you want to 
+                discuss anything with me or if you want me to share my knowledge to you privately or even if you want me to be a speaker at your event. 
+                Just contact me. I will gladly accept it if I think I have enough knowledge about the topic 😊
 							</p>
 							<p>
 								The first time I was interested in the IT world is when I was in junior high school. I was a gamer and played lot of games. One day, I played a game
 								called Little Fighter 2. I really wanted to use a character which is the villain king in that game, but by default, that character is not available to choose. 
 								I was curious and ended up going to the installation folder and open the files which can be opened by notepad LOL. I edited some files which I thought may
 								have an impact to the game and then I restarted the game. And BOOM, I can use the character that I wanted haha. I was very happy and I thought that I was 
-								successfully "hacking" the game XD
+								successfully "hacking" the game 😂
 							</p>
 							<p>
 								The next thing that made me became more interested in IT world is when I have an internet connection at home. I remember it was 2009. At that time, I also went to vocational high school
 								and took the <strong>Computer and Network Engineering </strong>major. I started my blog in 2009 and learn HTML & CSS because of it. I didn't know that there were
-								many free templates available for Blogger. So, I modified the default template by myself haha. At school, I got many knowledge and skills about computer and networking.
+								many free templates available for Blogger. So, I modified the default template by myself 😅. At school, I got many knowledge and skills about computer and networking.
 								I learn the components of a PC and then I can assemble a PC. I learned to set up a local area network (LAN) and also wide area network (WAN). I also tried many operating systems besides Windows,
-								such as Free BSD, Mikrotik, and many linux distros. I remember I even made my laptop quad boot by using Windows, Ubuntu, Slackware, and Backtrack. I did it on purpose, of course.
-								I spent my 4 years in school using Linux. Most of the material are about networking. I remember I learned about IP, Netmask/Genmask, supernetting, subnetting, routing, building
+								such as Free BSD, Mikrotik, and many Linux distros. I remember I even made my laptop quad boot by using Windows, Ubuntu, Slackware, and Backtrack. I did it on purpose, of course.
+								I spent my 4 years in this school using Linux. Most of the material are about networking. I remember I learned about IP, Netmask/Genmask, supernetting, subnetting, routing, building
 								a DNS server, Proxy server, Mail server, etc. I honestly like them all but then I realize that these are not really my thing. I'm more into a software engineering rather than this 
 								networking or IT infrastructure things. So, after I finished the school, I decided not to looking for a job. I wanted to go to college.
 							</p>
@@ -114,10 +196,10 @@
 								lecturers. I learned about many programming paradigms, study about data model (with SQL and NoSQL), analyze & design a software, dealing with 
 								distributed environment, and so many other things. I'm very grateful that I was given a chance studied there. In 2017, I graduated from 
 								Polban and unexpectedly, I received the honor as the best graduate in engineering. I really didn't expect to get that honor but I'm very happy, 
-								of course. This is my greatest achievement in my life until today :)
+								of course. This is my greatest achievement in my life until today 🙂
 							</p>
 							<p>
-								Aside from software engineering, I love sports, especially football. Until junior highschool, I still wanted to become a professional
+								Apart from being a software engineer, I love sports, especially football. Until junior highschool, I still wanted to become a professional
 								football player. But after I went to vocational highschool, I became more realistic haha. I ended up just making football as my hobby, not to
 								be my profession. I have a dream to watch a world cup match live in the stadium. Hopefully someday I can make it true. Aamiin. 
 								I also have an interest in music. I love playing guitar and singing. Some of my friends said that I have a good voice.
@@ -132,207 +214,268 @@
 								get up. I'm not a genius. I've been meeting some people who are smarter than me or considered as a genius. When they can do something, I believe
 								I can do it too. The difference is that maybe they can do it faster than me. I'm not feeling inferior to them. I just have to try and learn two times,
 								three times, or four times harder than them. The result would be the same or even better. So my message to you guys (and also myself), 
-								Don't give up on your dreams! Find your passion, define your goals, and work as hard as you can to achieve that goals. Even if you don't reach
-								your goals yet, trust me, you'll get an important lesson. Just keep learning and trying :)
+								Don't give up on your dreams! Find your passion, define your goals, and work as hard as you can to achieve those goals. Even if you don't reach
+								your goals yet, trust me, you'll get an important lesson. Just keep learning and trying 🙃
 							</p>
-							</div>
-						</div>
-					</div>
-					<ul class="fh5co-social">
-						<li><a href="mailto:faris.arifiansyah@gmail.com"><i class="icon-envelope"></i></a></li>
-						<li><a href="https://twitter.com/Faris17" target="_blank"><i class="icon-twitter"></i></a></li>
-						<li><a href="https://www.instagram.com/faris_arifiansyah" target="_blank"><i class="icon-instagram"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/farisarifiansyah/" target="_blank"><i class="icon-linkedin"></i></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="2">
-				<div class="fh5co-content-inner">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-graduation-cap"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2013-2017 : Politeknik Negeri Bandung</h2>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
-								</div>
-							</div>
+            </div>
+          </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-graduation-cap"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2009-2013 : SMKN 1 Cimahi</h2>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
-								</div>
-							</div>
+        </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-graduation-cap"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2006-2009 : SMPN 3 Cimahi</h2>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
-								</div>
-							</div>
+      </section>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-graduation-cap"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2000-2006 : SD Budiluhur</h2>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
-								</div>
-							</div>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
 
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="3">
-				<div class="fh5co-content-inner">
-					<div class="row">
-						<div class="col-md-12">
-							<p>I always love my job and I'm very happy that I have chances to work with these cool companies.</p>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Back-end Developer</h3>
+              <div class="subheading mb-3">PT Xtremax Teknologi Indonesia</div>
+              <p>
+                Xtremax Indonesia is a branch of Xtremax Pte Ltd. based in Singapore. Xtremax is a digital agency and has a specialization in 
+                building portals &amp; CMS, enterprise application, and cloud computing. Xtremax is the first company that I choose to work for.
+                I began my professional career in this company. After graduated from college, I did some "research" about software companies located 
+                in Bandung which value a software developer highly. Then I found Xtremax is one of them. So, I applied to Xtremax. After passing 
+                all the test stages, I got offered by them. They offered me a higher salary than I expected and also good benefits. So I accept the offer 
+                without a doubt. Xtremax provides cozy workplace and has many fun &amp; talented developers. I work here as a back-end developer, 
+                specifically Java Developer. However, even though my job title is back-end developer, sometimes I still have to deal with the front-end side by myself. 😅 
+              </p>
+              <p>
+                These are the technologies that I use in Xtremax:
+              </p>
+              <ul>
+                <li>Java</li>
+                <li>Spring Framework (core, web, webmvc, data, transaction, cloud config, security, AOP)</li>
+                <li>Hibernate Framework</li>
+                <li>Liquibase</li>
+                <li>Ehcache</li>
+                <li>Oracle DB, PostgreSQL</li>
+                <li>JHipster</li>
+                <li>Build &amp; Dependancy Management : Gradle, Maven</li>
+                <li>Front-end things : HTML, CSS, Bootstrap, JavaScript, jQuery, ExtJS</li>
+                <li>CI server : Jet Brains Team City</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2017 - Present</span>
+            </div>
+          </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Sep 2017 - Present</h2>
-									<h3>PT Xtremax Teknologi Indonesia</h3>
-									<h4>Back-end Developer</h4>
-									<p style="margin-bottom:0px;">Xtremax Indonesia is a branch of Xtremax Pte Ltd. based in Singapore. Xtremax is a digital agency and has a specialization in 
-										building portals &amp; CMS, enterprise application, and cloud computing. Xtremax is the first company that I choose to work for.
-										I began my professional career in this company. After graduated from college, I did some "research" about software companies located 
-										in Bandung which value a software developer highly. Then I found Xtremax is one of them. So, I applied to Xtremax. After passing 
-										some tests, I got offered by them. They offered me a higher salary than I expected and also good benefits. So I accept the offer 
-										without a doubt. Xtremax provides cozy workplace and has many fun &amp; talented developers. I work here as a back-end developer, 
-										specifically Java Developer. These are the technologies that I used in Xtremax :
-									</p>
-									<ul>
-										<li>Java</li>
-										<li>Spring Framework (core, web, webmvc, data, transaction, cloud config, security, AOP)</li>
-										<li>Hibernate Framework</li>
-										<li>Liquibase</li>
-										<li>Ehcache</li>
-										<li>Oracle DB, PostgreSQL</li>
-										<li>JHipster</li>
-										<li>Build &amp; Dependancy Management : Gradle, Maven</li>
-										<li>Front-end things : HTML, CSS, Bootstrap, JavaScript, jQuery, ExtJS</li>
-										<li>CI server : Jet Brains Team City</li>
-									</ul>
-									<br />
-									<br />
-								</div>
-							</div>
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Web Developer (Intern)</h3>
+              <div class="subheading mb-3">PT Ursabyte</div>
+              <p>I was an intern web developer at this company. The internship program is part of the curriculum at my college. 
+                I spent 5 months with cool and fun guys. I also have friendly bosses here. I involved in some projects and 
+                all those projects were using Java in the server side with spring framework. Previously, I already familiar with
+                spring framework but still, of course, I learned many things and I've become more experienced using Java with this spring framework.
+                One thing that I'll never forget is when I involved in a project where in that project I worked as a full-stack developer. Yes, I was
+                working on both the back-end and the front-end side of the software. This is my first time I code JavaScript. I've faced HTML and CSS before but
+                I've never code JavaScript. At first, I thought it was gonna be difficult, but after I learnt JavaScript and jQuery in one full day, 
+                I was wrong. It was not that difficult and jQuery even make it easier for us, developer. I'm so glad that I met these guys, especially my boss.
+                I was working directly with him and he gave me valuable lessons. Thanks Boss 😀
+              </p>
+              <p>
+                These are the technologies that I use when I was working at this company:
+              </p>
+              <ul>
+                <li>Java Programming Language</li>
+                <li>Spring Framework</li>
+                <li>Hibernate Framework</li>
+                <li>DBMS : Oracle DB, PostgreSQL</li>
+                <li>Application/Web Server : Oracle Weblogic, Tomcat</li>
+                <li>Reporting : JasperReport</li>
+                <li>Front-end things : HTML, CSS with Bootstrap Framework, JavaScript, jQuery</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2016 - December 2016</span>
+            </div>
+          </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Aug 2016 - Dec 2016</h2>
-									<h3>PT Ursabyte</h3>
-									<h4>Web Developer (Internship)</h4>
-									<p>I was an intern web developer at this company. The internship program is part of the curriculum at my college. 
-										I spent 5 months with cool and fun guys. I also have friendly bosses here. I involved in some projects and 
-										all those projects were using Java in the server side with spring framework. Previously, I already familiar with
-										spring framework but still, of course, I learned many things and I've become more experienced using Java with this spring framework.
-										One thing that I'll never forget is that I involved in a project where in that project I worked as a full-stack developer. Yes, I was
-										working on both the back-end and the front-end side of the software. This is my first time I code JavaScript. I've faced HTML and CSS before but
-										I've never code JavaScript. At first, I thought it was gonna be difficult, but after I learnt JavaScript and jQuery in one full day, 
-										I was wrong. It was not that difficult and jQuery even make it easier for us, developer. I'm so glad that I met these guys, especially my boss.
-										I was working directly with him and He gave me valuable lessons. Thanks Boss :D
-									</p>
-									<p style="margin-bottom:0px;">So, to sum up, these are the technologies that I use when I was working at this company:</p>
-									<ul>
-										<li>Java Programming Language</li>
-										<li>Spring Framework</li>
-										<li>Hibernate Framework</li>
-										<li>DBMS : Oracle DB, PostgreSQL</li>
-										<li>Application/Web Server : Oracle Weblogic, Tomcat</li>
-										<li>Reporting : JasperReport</li>
-										<li>Front-end things : HTML, CSS with Bootstrap Framework, JavaScript, jQuery</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="4">
-				<div class="fh5co-content-inner">
-					<div class="row">
-						<div class="col-md-12">
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
-						</div>
+        </div>
 
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
-						</div>
+      </section>
 
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer id="fh5co-footer">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center">
-					<small>
-						&copy; 2018 Faris Arifiansyah. All Rights Reserved. 
-						<div style="display:none;"><br /><br /><span class="fh5co-author">Background Image : <a href="http://www.mediamutation.com/space-background/space-background-hd/space-background-hd/" target="_blank">Source</a> </span></div>
-					</small>
-				</div>
-			</div>
-		</footer>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
 
-	<script>
-		$(document).ready(function(){
-			$("li#blog-link").click(function(e){
-				var win = window.open("https://blog.faris.id", "_blank");
-				win.focus();
-			});
-		});
-	</script>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Politeknik Negeri Bandung (Bandung State Polytechnic)</h3>
+              <div class="subheading mb-3">Bachelor of Applied Science, Informatics, GPA: 3.84 / 4.00</div>
+              <p>
+                <strong>Core modules</strong>: Basics of Programming, Data Structure and Algorithm, Programming Techniques, Principles of Programming Language, 
+                Database System, Operating System, Software Analysis and Design, Data Modelling, Information System, Web Development, Software Testing, 
+                Computer Graphics, Image Processing, Object-oriented Software Programming, Distributed System, Data Communication and Networking, 
+                Computer Architecture and Organization, User Interface Design, Software Project Management
+              </p>
+              <p style="font-weight: bold;">Activities, Honor, and Awards</p>
+              <ul>
+                <li>The best graduate in engineering</li>
+                <li>Participated in Gemastik programming contest (2014 and 2015)</li>
+                <li>Participated in Imagine Cup 2015 → Game : Math Fantasy Defense</li>
+                <li>Participated in PKM (Program Kreativitas Mahasiswa) 2015-2016 → Mobile Application : Bandung Virtual Tour Guide (funded by Kemenristekdikti)</li>
+                <li>Chief executive of industry visit event (to Biznet Technovillage)</li>
+                <li>Scientific committee of Tisigram programming contest</li>
+                <li>The 1<sup>st</sup> champion of solo pop putra (singing competition) - Porseni Himakom</li>
+                <li>Staff of Education Department of Computer Student Union (Himakom)</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2013 - October 2017</span>
+            </div>
+          </div>
 
-	</body>
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">SMKN 1 Cimahi (Vocational High School 1 Cimahi)</h3>
+              <div class="subheading mb-3">Computer and Network Engineering</div>
+              <p>
+                <strong>Core modules</strong>: Server Admin, LAN Diagnosis, WAN Diagnosis, LAN Installation, WAN Installation, Operating System, Web Database, 
+                PC Assembly and Repair 
+              </p>
+              <p style="font-weight: bold;">Activities, Honor, and Awards</p>
+              <ul>
+                <li>Futsal (Extracurricular)</li>
+                <li>Staff of Media Department of Forum Dienul Islam (FDI)</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2009 - July 2013</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <!-- <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-sass"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-less"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-grunt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-gulp"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-npm"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-First, Responsive Design</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Browser Testing &amp; Debugging</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum</li>
+          </ul> -->
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Aside from being a software engineer, I enjoyed most of my time being indoors at home. I watch movies and read books/comics/manga. There are lots of good movies 
+            and books, but my favorite genre is mystery. In the manga world, my favorite is <strong>Hunter X Hunter (HXH)</strong> by Yoshihiro Togashi. 
+            I don't know why.. But I really like it. HXH is a part of my childhood life and it really touches me so I can't forget it even today.
+          </p>
+          <p>
+            In my free time, sometimes, I play futsal, football, and badminton if there are friends who invite me. I like those sports. And besides sports, I also like an adventure. 
+            I really love the ocean even though I can't swim hahaha. I'd like to do an adventure in the sea as <strong>Pi</strong> did in the 
+            <strong>Life of Pi</strong> film 😂. That movie along with the <strong>One Piece</strong> series made me more interested to do an 
+            adventure on the ocean. It looks challenging and fun 😀
+          </p>
+          <p>
+            I also spend my time writing about anything on my <a href="https://blog.faris.id" target="_blank">blog</a>. I love to write because 
+            oneday I can come back to see my writing and feel nostalgic by it 🙂 The best feeling about writing is when the readers feel happy and helped by the writings. 
+            I'm happy just to see a "Thanks" comment on my blog post. It makes me feel useful and helpful to other people. 
+            In addition to blogging, I also spend lot of my free time exploring the latest technology advancements in the software engineering world.
+          </p>
+          <p>
+            I'm very interested in football. So, I often spend my time watching football matches and read articles/news about football. I think I have a good knowledge about 
+            this sport hahaha. My favorite football player is <strong>Ricardo Kaka</strong> from Brazil. But if we talk about the best (in my generation), then I would say <strong>Lionel Messi</strong> and 
+            <strong>Cristiano Ronaldo</strong>. I'd say them the bests because they have been playing 
+            consistently incredible in at least ten seasons. It's just Wow! Both Messi &amp; Cristiano are living legend. But if I have to choose one, then my choice goes to Messi.
+            He plays beautiful football. He has a great vision that only few players have. And more importantly, he has skills to support his great vision (he is the best dribbler 
+            and passer). Unfortunately, till today, he's still can't carry Argentina to win a major trophy.
+          </p>
+          <p>
+            One last thing about my interests is music. I love playing guitar and singing. Sometimes I make music covers and post them on one of my channels on Youtube, 
+            but most of the time I only post them on my Instagram account. Don't hesitate to watch hahaha 
+          </p>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              The best graduate of Bandung State Polytechnic in engineering (2017) - <strong><a href="https://www.polban.ac.id/" target="_blank">Polban</a></strong></li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Neo4j Certified Professional (April 2018, Licence Number : 16695748) - <strong><a href="https://neo4j.com/" target="_blank">Neo4j, Inc.</a></strong></li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Certificate of Competency : Android Applications Development with Android Studio (June 2017, Licence Number : 17C619) - <strong>InformIT</strong></li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              TOEIC (April 2017 - April 2019, Score : 770 / 990) - <strong><a href="https://www.ets.org/" target="_blank">Educational Testing Service (ETS)</a></strong></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
 </html>
-
