@@ -4,4 +4,4 @@ This repository contains the source code of my ([faris](https://github.com/faris
 
 
 ## Copyright and License
-Copyright &copy; 2018 faris.id
+Copyright &copy; 2018 [faris.id](https://www.faris.id)
