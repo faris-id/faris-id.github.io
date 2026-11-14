@@ -1,0 +1,29 @@
+---
+import { impact } from '../data/profile';
+import SectionHeader from './SectionHeader.astro';
+---
+
+<section id="impact" class="section">
+  <div class="wrap">
+    <SectionHeader
+      number="02"
+      title="Selected impact"
+      description="A few numbers that describe the systems and teams I've worked with."
+    />
+
+    <div
+      class="mt-10 grid border-t border-l border-line sm:grid-cols-2 lg:grid-cols-4"
+      data-reveal
+    >
+      {
+        impact.map((item) => (
+          <div class="border-r border-b border-line p-6">
+            <p class="font-serif text-4xl leading-none text-accent md:text-5xl">{item.value}</p>
+            <p class="mt-4 text-sm font-medium text-ink">{item.label}</p>
+            <p class="mt-2 text-xs leading-relaxed text-muted">{item.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

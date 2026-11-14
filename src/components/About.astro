@@ -1,0 +1,46 @@
+---
+import { profile } from '../data/profile';
+import SectionHeader from './SectionHeader.astro';
+---
+
+<section id="about" class="section">
+  <div class="wrap">
+    <SectionHeader
+      number="01"
+      title="About"
+      description="Nine years of building backend systems, four of them leading the teams that run them."
+    />
+
+    <div class="mt-10 grid gap-10 md:grid-cols-12 md:gap-8">
+      <div class="prose-editorial space-y-5 md:col-span-7" data-reveal>
+        {profile.about.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+
+      <aside class="md:col-span-4 md:col-start-9" data-reveal>
+        <dl class="border-t border-line">
+          {
+            profile.facts.map((fact) => (
+              <div class="border-b border-line py-4">
+                <dt class="eyebrow">{fact.label}</dt>
+                <dd class="mt-1.5 text-sm leading-relaxed text-ink">{fact.value}</dd>
+              </div>
+            ))
+          }
+          <div class="border-b border-line py-4">
+            <dt class="eyebrow">Languages</dt>
+            <dd class="mt-1.5 space-y-1 text-sm leading-relaxed text-ink">
+              {
+                profile.languages.map((language) => (
+                  <p>
+                    {language.label}{' '}
+                    <span class="text-muted">— {language.level}</span>
+                  </p>
+                ))
+              }
+            </dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>

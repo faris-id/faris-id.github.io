@@ -1,0 +1,60 @@
+---
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import Education from '../components/Education.astro';
+import Experience from '../components/Experience.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import Impact from '../components/Impact.astro';
+import Nav from '../components/Nav.astro';
+import Skills from '../components/Skills.astro';
+import { profile, socials } from '../data/profile';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: profile.name,
+  url: 'https://www.faris.id',
+  image: 'https://www.faris.id/og.png',
+  jobTitle: profile.role,
+  worksFor: {
+    '@type': 'Organization',
+    name: profile.company,
+    url: profile.companyUrl,
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Bandung',
+    addressRegion: 'West Java',
+    addressCountry: 'ID',
+  },
+  email: `mailto:${profile.email}`,
+  sameAs: socials
+    .filter((social) => social.icon !== 'mail')
+    .map((social) => social.href),
+  alumniOf: [
+    { '@type': 'CollegeOrUniversity', name: 'Institut Teknologi Bandung' },
+    { '@type': 'CollegeOrUniversity', name: 'Politeknik Negeri Bandung' },
+  ],
+  knowsLanguage: ['Indonesian', 'English'],
+};
+---
+
+<BaseLayout>
+  <Nav />
+
+  <main id="main">
+    <Hero />
+    <About />
+    <Impact />
+    <Experience />
+    <Skills />
+    <Education />
+    <Contact />
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+</BaseLayout>

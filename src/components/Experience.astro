@@ -1,0 +1,110 @@
+---
+import { experience } from '../data/experience';
+import SectionHeader from './SectionHeader.astro';
+---
+
+<section id="experience" class="section">
+  <div class="wrap">
+    <SectionHeader
+      number="03"
+      title="Experience"
+      description="From intern to engineering manager — SaaS, marketplace, and agency teams across three countries."
+    />
+
+    <ol class="mt-10">
+      {
+        experience.map((job) => (
+          <li
+            class="grid gap-4 border-t border-line py-9 md:grid-cols-12 md:gap-8"
+            data-reveal
+          >
+            <div class="md:col-span-3">
+              <p class="text-[11px] uppercase tracking-[0.14em] text-muted tabular-nums">
+                {job.period}
+              </p>
+              {job.location && <p class="mt-1.5 text-xs text-muted">{job.location}</p>}
+            </div>
+
+            <div class="md:col-span-9">
+              <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <h3 class="text-lg font-medium tracking-tight text-ink md:text-xl">{job.role}</h3>
+                {job.current && (
+                  <span class="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-[0.14em] text-accent">
+                    <span class="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
+                    Current
+                  </span>
+                )}
+              </div>
+
+              <p class="mt-1 text-sm text-muted">
+                {job.companyUrl ? (
+                  <a
+                    class="link"
+                    href={job.companyUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    {job.company}
+                  </a>
+                ) : (
+                  job.company
+                )}
+              </p>
+
+              {job.summary && (
+                <p class="mt-4 max-w-2xl text-[0.9375rem] leading-relaxed text-muted">
+                  {job.summary}
+                </p>
+              )}
+
+              {job.highlights.length > 0 && (
+                <ul class="bullet-list mt-4 max-w-2xl">
+                  {job.highlights.map((highlight) => (
+                    <li>{highlight}</li>
+                  ))}
+                </ul>
+              )}
+
+              {job.details && job.details.length > 0 && (
+                <details class="group mt-5 max-w-2xl border-t border-line pt-4">
+                  <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-[11px] uppercase tracking-[0.14em] text-muted transition-colors hover:text-ink">
+                    {job.detailsLabel ?? 'Details'}
+                    <span
+                      class="text-base leading-none transition-transform duration-200 group-open:rotate-45"
+                      aria-hidden="true"
+                    >
+                      +
+                    </span>
+                  </summary>
+                  <div class="mt-5 grid gap-6 sm:grid-cols-2">
+                    {job.details.map((detail) => (
+                      <div>
+                        <p class="text-xs font-medium text-ink">{detail.title}</p>
+                        <p class="mt-0.5 text-[10px] uppercase tracking-[0.12em] text-muted">
+                          {detail.period}
+                        </p>
+                        <ul class="bullet-list mt-2">
+                          {detail.points.map((point) => (
+                            <li>{point}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </details>
+              )}
+
+              {job.tech.length > 0 && (
+                <ul class="mt-5 flex max-w-2xl flex-wrap gap-1.5" aria-label={`Technologies used at ${job.company}`}>
+                  {job.tech.map((tech) => (
+                    <li class="tag">{tech}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>

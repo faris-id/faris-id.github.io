@@ -1,0 +1,85 @@
+---
+import { Image } from 'astro:assets';
+import portrait from '../assets/portrait.jpg';
+import { profile, socials } from '../data/profile';
+import SocialIcon from './SocialIcon.astro';
+---
+
+<section id="top" class="wrap pt-12 pb-16 md:pt-20 md:pb-24">
+  <div class="grid items-end gap-12 md:grid-cols-12 md:gap-8">
+    <div class="md:col-span-8">
+      <p class="eyebrow flex flex-wrap items-center gap-2" data-reveal>
+        <span class="inline-block h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true"></span>
+        {profile.role} at {profile.company}
+        <span class="text-line" aria-hidden="true">/</span>
+        {profile.location}
+      </p>
+
+      <h1
+        class="mt-5 font-serif text-[clamp(3.25rem,10vw,7rem)] leading-[0.92] tracking-[-0.02em] text-ink"
+        data-reveal
+      >
+        <span class="block md:inline">{profile.firstName}</span>{' '}
+        <em class="block text-accent md:inline">{profile.lastName}</em>
+      </h1>
+
+      <p class="mt-7 max-w-xl text-[1.0625rem] leading-relaxed text-muted" data-reveal>
+        {profile.lede}
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center gap-3" data-reveal>
+        <a href={`mailto:${profile.email}`} class="btn btn-primary">
+          Get in touch
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="#experience" class="btn btn-ghost">View experience</a>
+      </div>
+
+      <ul class="mt-10 flex flex-wrap items-center gap-1.5" aria-label="Social links" data-reveal>
+        {
+          socials.map((social) => (
+            <li>
+              <a
+                href={social.href}
+                target={social.icon === 'mail' ? undefined : '_blank'}
+                rel={social.icon === 'mail' ? undefined : 'noreferrer noopener'}
+                class="inline-flex h-9 w-9 items-center justify-center border border-line text-muted transition-colors hover:border-accent hover:text-accent"
+                aria-label={social.label}
+                title={`${social.label} — ${social.handle}`}
+              >
+                <SocialIcon icon={social.icon} class="h-4 w-4" />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="md:col-span-4 md:pl-4">
+      <div class="relative mx-auto w-full max-w-[300px]" data-reveal>
+        <div class="relative">
+          <div
+            class="absolute inset-0 translate-x-2.5 translate-y-2.5 border border-accent/45"
+            aria-hidden="true"
+          >
+          </div>
+          <div class="relative aspect-square overflow-hidden bg-surface">
+            <Image
+              src={portrait}
+              alt="Portrait of Faris Arifiansyah"
+              width={500}
+              height={486}
+              class="h-full w-full object-cover"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+        <p class="mt-4 flex items-center justify-between text-[10px] uppercase tracking-[0.16em] text-muted">
+          <span>Bandung, ID</span>
+          <span>{profile.timezone}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
