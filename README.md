@@ -21,8 +21,9 @@ Requires Node.js **22.23.4 or newer** (Node 24 recommended).
 ```bash
 npm install
 npm run dev       # http://localhost:4321
-npm run build     # generates dist/ (and public/og.png)
+npm run build     # generates dist/
 npm run preview   # serve the production build locally
+npm run og        # regenerate public/og.png
 ```
 
 ## Content
