@@ -11,20 +11,33 @@ runtime cost: everything is rendered at build time and served from GitHub's CDN.
 - [React](https://react.dev) — small interactive islands (theme toggle, copy email)
 - [Tailwind CSS](https://tailwindcss.com) 4 — styling and design tokens
 - TypeScript
-- Fonts: Instrument Serif + Inter Variable, self-hosted via Fontsource
+- Fonts: Cormorant Garamond + Inter Variable, self-hosted via Fontsource
 - Icons: Simple Icons (inline SVG)
 
 ## Development
 
-Requires Node.js **22.23.4 or newer** (Node 24 recommended).
+Requires Node.js **22.23.4 or newer** (Node 24 recommended). The repository ships an
+`.nvmrc`, so with nvm installed the setup is:
 
 ```bash
-npm install
-npm run dev       # http://localhost:4321
-npm run build     # generates dist/
-npm run preview   # serve the production build locally
-npm run og        # regenerate public/og.png
+nvm install        # installs the Node version from .nvmrc (only once)
+nvm use            # switch to it in every new terminal
+npm install        # installs dependencies (only once)
+npm run dev        # http://localhost:4321 — hot reload
 ```
+
+Then edit files and refresh the browser. `npm run dev` picks up changes automatically
+(styles, components, and `src/data/*.ts` content).
+
+Before pushing, verify the production build:
+
+```bash
+npm run build      # generates dist/
+npm run preview    # serves dist/ at http://localhost:4321
+npm run og         # regenerate public/og.png
+```
+
+Stop the dev or preview server with `Ctrl+C`.
 
 ## Content
 
@@ -49,10 +62,15 @@ still need to be filled in manually:
 ## Design
 
 - Minimal editorial layout: paper/ink palette with a deep green accent
+- Display type: Cormorant Garamond; body: Inter Variable
 - Light and dark themes (follows the system, remembers the user's choice)
 - Responsive from 360px up
 - Motion respects `prefers-reduced-motion`
 - SEO: canonical URL, Open Graph/Twitter cards, JSON-LD Person schema, sitemap, robots.txt
+
+The Open Graph image (`public/og.png`) is committed so CI does not depend on local fonts.
+Regenerate it with `npm run og`; on macOS the script renders the display type with Didot
+(librsvg cannot load woff2, so it falls back to the closest serif available).
 
 ## Deployment
 
