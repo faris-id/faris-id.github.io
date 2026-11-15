@@ -12,13 +12,13 @@ import SectionHeader from './SectionHeader.astro';
     />
 
     <div
-      class="mt-10 grid border-t border-l border-line sm:grid-cols-2 lg:grid-cols-4"
+      class="mt-10 grid border-t border-l border-line sm:grid-cols-2 xl:grid-cols-4"
       data-reveal
     >
       {
         impact.map((item) => (
           <div class="border-r border-b border-line p-6">
-            <p class="font-serif text-[2.25rem] font-medium leading-none text-accent md:text-[2.75rem]">{item.value}</p>
+            <p class="font-serif text-[2.25rem] font-medium leading-none text-accent lining-nums tabular-nums md:text-[2.75rem]">{item.value}</p>
             <p class="mt-4 text-sm font-medium text-ink">{item.label}</p>
             <p class="mt-2 text-xs leading-relaxed text-muted">{item.description}</p>
           </div>
