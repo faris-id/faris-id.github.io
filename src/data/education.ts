@@ -39,12 +39,11 @@ export const education: EducationEntry[] = [
     degree: 'Computer and Network Engineering',
     period: '2009 — 2013',
     location: 'Cimahi, Indonesia',
-    note: 'Learnt about computer networking, linux sysadmin, network installation and administration, operating system',
+    note: 'Learnt about computer networking, Linux sysadmin, and network installation and administration.',
   },
 ];
 
 export const certifications: Certification[] = [
-  // TODO(content): add credential links/dates when available.
   {
     name: 'Microsoft Certified: Azure Fundamentals',
     issuer: 'Microsoft',

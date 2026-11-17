@@ -25,14 +25,13 @@ export const experience: Experience[] = [
     role: 'Senior Software Engineer',
     period: 'Apr 2026 — Present',
     location: 'Indonesia',
-    // TODO(content): add NinjaOne responsibilities, impact, and tech stack.
     summary:
-      "Part of NinjaOne's SaaS backup team, previously known as Dropsuite. Specificly responsible for maintaining and scaling our partner portal where users can manage their customer's subscriptions, manage organizations, view insights, manage integration, notification settings, and many more.",
+      "Part of NinjaOne's SaaS backup team, previously known as Dropsuite. Specifically responsible for maintaining and scaling our partner portal where users can manage their customers' subscriptions, organizations, insights, integrations, notification settings, and more.",
     highlights: [
-      'Built a new insights service from scratch that provides insights for users on their organization\'s usage or activities inside our backup system.',
-      'Developed and maintained partner portal and its features, deployed in many regions, worldwide.',
-      'Reduced APIs latency by >90% by implementing partition pruning technique',
-      'Strengthen overall system security',
+      'Built a new insights service from scratch that gives users visibility into their organization\'s usage and activity across our backup system.',
+      'Developed and maintained the partner portal and its features, deployed across many regions worldwide.',
+      'Reduced API latency by more than 90% by implementing partition pruning.',
+      'Strengthened overall system security.',
     ],
     tech: [
       'Ruby',
