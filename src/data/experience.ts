@@ -62,7 +62,7 @@ export const experience: Experience[] = [
     summary:
       'Led multiple engineering teams across Supply Chain, Mitra Experience, Virtual Product, and Mitra Bukalapak Platform, with distributed teams across Indonesia, Singapore, and Australia.',
     highlights: [
-      'Led a cost optimisation initiative that reduced tribe cloud costs by ~50% — more than IDR 500 million per month — within eight months.',
+      'Led a cost optimisation initiative that reduced tribe cloud costs by ~50% — more than IDR 500 million per month.',
       'Built and operated 20+ microservices, staying hands-on (~50–60%) in Go backend development, system design, and critical production issues.',
       'Improved system stability through monitoring, tracking, and data-driven incident prioritisation; reduced on-call issues by ~40% in Supply Chain.',
       'Managed up to 15 engineers across 4 teams, and partnered with senior leadership on hiring, org scaling, and long-term technical direction.',

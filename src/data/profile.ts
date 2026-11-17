@@ -95,7 +95,7 @@ export const impact = [
     value: '~50%',
     label: 'Cloud cost reduction',
     description:
-      'Led a tribe-wide optimisation that saved more than IDR 500 million per month within eight months.',
+      'Led a tribe-wide optimisation that saved more than IDR 500 million per month.',
   },
   {
     value: '20+',
