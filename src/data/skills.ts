@@ -6,7 +6,7 @@ export interface SkillGroup {
 export const skillGroups: SkillGroup[] = [
   {
     title: 'Languages',
-    items: ['Go', 'Ruby', 'Java', 'JavaScript', 'SQL'],
+    items: ['Go', 'Ruby', 'Kotlin', 'Java', 'JavaScript', 'SQL'],
   },
   {
     title: 'Backend & architecture',
@@ -29,12 +29,15 @@ export const skillGroups: SkillGroup[] = [
       'Elasticsearch',
       'Kafka',
       'BigQuery',
+      'GCP Pub/Sub',
+      'AWS SQS + SNS'
     ],
   },
   {
     title: 'Cloud & DevOps',
     items: [
       'Google Cloud (GKE, Cloud SQL, Pub/Sub)',
+      'AWS (ECS, EC2, Elasticache, RDS, SQS, SNS, S3, Secret Manager)',
       'Azure (AKS)',
       'Kubernetes',
       'Docker',
@@ -43,7 +46,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: 'Observability',
-    items: ['Prometheus', 'Grafana', 'Datadog', 'ELK Stack'],
+    items: ['Prometheus', 'Grafana', 'Datadog', 'OpenSearch'],
   },
   {
     title: 'Leadership',

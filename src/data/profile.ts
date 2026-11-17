@@ -22,14 +22,16 @@ export const profile = {
   role: 'Senior Software Engineer',
   company: 'NinjaOne',
   companyUrl: 'https://www.ninjaone.com',
-  location: 'Greater Bandung, Indonesia',
+  location: 'Indonesia',
   timezone: 'GMT+7',
   email: 'faris.arifiansyah@gmail.com',
   lede: 'Engineering leader with 9+ years building and scaling backend systems used by tens of millions of people. Currently at NinjaOne.',
   about: [
     "I'm a software engineering leader with 9+ years of experience, combining hands-on technical work with engineering leadership. Five of those years were spent as an individual contributor; four were spent leading teams as a Tech Lead and Engineering Manager, building and scaling backend systems used by tens of millions of users.",
-    "I design and operate high-throughput distributed systems, primarily in Go, with Ruby and Java along the way. My work spans microservices, event-driven architecture with Kafka, relational and NoSQL databases, and cloud platforms — mostly Google Cloud and Azure. I've owned systems end to end, from architecture and delivery to production reliability and cost.",
-    "Beyond work: football, guitar, and a good mystery novel or manga. I still dream of watching a World Cup match live, and I'll take any excuse to be near the ocean.",
+    "I design and operate high-throughput distributed systems, primarily in Go, with Ruby and Java along the way. My work spans microservices, event-driven architecture with Kafka, relational and NoSQL databases, and cloud platforms (Google Cloud, AWS, and Azure). I've owned systems end to end, from architecture and delivery to production reliability and cost.",
+    "I’m experienced with modern cloud and DevOps practices, including Kubernetes, Docker, and CI/CD pipelines, primarily on Google Cloud and AWS, with a strong focus on observability and system reliability. I also have a solid foundation in frontend development (including React), allowing me to operate effectively with full-stack awareness.",
+    "I graduated as Valedictorian (Top 1 in Engineering) from Bandung State Polytechnic and earned a Master’s degree (Summa Cum Laude) from Institut Teknologi Bandung (ITB), where I focused on incident prevention and management in fintech systems.",
+    "Beyond work: football, investing (stocks & crypto), music (make a song cover), watching Netflix, and spending time with family",
   ],
   facts: [
     { label: 'Based in', value: 'Greater Bandung, Indonesia' },
@@ -77,14 +79,8 @@ export const socials: SocialLink[] = [
   {
     label: 'YouTube',
     handle: 'Faris Arifiansyah',
-    href: 'https://www.youtube.com/channel/UCo8pcpPchtjtprX0vmB_7EQ',
+    href: 'https://www.youtube.com/channel/UC3o2BOksN0Bu3QUiOQKeJ6w',
     icon: 'youtube',
-  },
-  {
-    label: 'Facebook',
-    handle: '/faris19',
-    href: 'https://www.facebook.com/faris19',
-    icon: 'facebook',
   },
   {
     label: 'Blog',
@@ -105,13 +101,13 @@ export const impact = [
     value: '20+',
     label: 'Microservices owned',
     description:
-      'Built and operated services across supply chain, marketplace, and platform domains for tens of millions of users.',
+      'Built and operated services across supply chain, marketplace, and o2o platform domains for tens of millions of users.',
   },
   {
     value: '~1,000 RPS',
     label: 'Marketing systems',
     description:
-      'Designed high-throughput pipelines syncing hundreds of millions of products to Facebook, Google, and iPrice.',
+      'Designed high-throughput pipelines syncing hundreds of millions of products to Facebook, Google, iPrice, and other marketing platforms.',
   },
   {
     value: '3',
