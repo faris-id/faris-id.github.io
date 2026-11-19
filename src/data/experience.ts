@@ -26,7 +26,7 @@ export const experience: Experience[] = [
     period: 'Apr 2026 — Present',
     location: 'Indonesia',
     summary:
-      "Part of NinjaOne's SaaS backup team, previously known as Dropsuite. Specifically responsible for maintaining and scaling our partner portal where users can manage their customers' subscriptions, organizations, insights, integrations, notification settings, and more.",
+      "Part of NinjaOne's SaaS backup team, previously known as Dropsuite. Specifically responsible for maintaining and scaling our partner portal where users can manage their customers' subscriptions, organizations, insights, integrations, notification settings, and more. I also build with Claude Code day to day, which makes me a manager of AI agents: I set the direction, review the work, and sign off on what ships.",
     highlights: [
       'Built a new insights service from scratch that gives users visibility into their organization\'s usage and activity across our backup system.',
       'Developed and maintained the partner portal and its features, deployed across many regions worldwide.',
@@ -48,7 +48,7 @@ export const experience: Experience[] = [
       'Valkey',
       'OpenSearch',
       'Datadog',
-      'Claude',
+      'Claude Code',
     ],
     current: true,
   },
