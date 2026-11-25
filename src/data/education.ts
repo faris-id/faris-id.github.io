@@ -5,6 +5,7 @@ export interface EducationEntry {
   period: string;
   location?: string;
   note?: string;
+  thesis?: string;
   highlights?: string[];
 }
 
@@ -32,6 +33,8 @@ export const education: EducationEntry[] = [
     period: 'Sep 2013 — Aug 2017',
     location: 'Bandung, Indonesia',
     note: 'GPA 3.84 / 4.00. Graduated as valedictorian, the best student in engineering.',
+    thesis:
+      'Analysis and Implementation of Neo4j (NoSQL Graph Database) on Semantic Web Search Engine',
   },
   {
     school: 'SMK Negeri 1 Cimahi',

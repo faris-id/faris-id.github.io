@@ -36,6 +36,12 @@ import SectionHeader from './SectionHeader.astro';
                 </h3>
                 <p class="mt-1 text-sm leading-relaxed text-muted">{entry.degree}</p>
                 {entry.note && <p class="mt-2 text-xs leading-relaxed text-muted">{entry.note}</p>}
+                {entry.thesis && (
+                  <p class="mt-1.5 flex flex-wrap items-baseline gap-x-2 text-xs leading-relaxed text-muted">
+                    <span class="text-[10px] uppercase tracking-[0.14em]">Thesis</span>
+                    <span>{entry.thesis}</span>
+                  </p>
+                )}
               </li>
             ))
           }
